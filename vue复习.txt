@@ -1,0 +1,34 @@
+vue 指令
+  v-for循环
+  v-if v-else v-if-else 判断
+  v-model 双向绑定
+  v-html v-text 文本输出
+  v-on 事件绑定   @
+  v-bing 属性绑定   :
+  v-once 只渲染一次
+  v-show 显示隐藏
+  v-pre 不渲染
+  v-clock 渲染完成后消失
+  v-solt
+vue 生命周期
+  创建前
+    beforeCreate
+  创建后
+    created
+  渲染前
+    beforeMount
+  渲染后
+    mounted
+  修改前
+    beforeUpdate
+  修改后
+    updated
+  销毁前
+    beforeDestroy
+  销毁后
+    destroyed
+函数
+  methods
+
+  vue-resource
+  bootsstrap
