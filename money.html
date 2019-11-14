@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>金融货币模板</title>
+    <link rel="stylesheet" href="money.css">
+</head>
+
+<body>
+    <div class="warp">
+        <div>
+            <!-- 导航 -->
+            <dh></dh>
+            <!-- banner -->
+            <ban></ban>
+            <!-- 使用流程 -->
+            <pass title="使用流程" cont="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。"></pass>
+            <!-- 近期货币 -->
+            <money></money>
+            <!-- 全球服务 -->
+            <ball title="全球服务" cont="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。"></ball>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <template id="nav">
+        <div>
+            <div class="hd clearfix">
+                <div class="hd_logo">
+                    <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNmMwMWZiNzVjMmNlMjZlZGU4YmEwNWNlNzBhMzA1N2YucG5n.png" alt="">
+                </div>
+                <div class="hd_nav">
+                    <ul class="clearfix">
+                        <li><a href="#a">首页</a></li>
+                        <li class="active"><a href="#b">使用流程</a></li>
+                        <li><a href="#c">全球服务</a></li>
+                        <li><a href="#d">关于我们</a></li>
+                        <li><a href="#e">专家团队</a></li>
+                        <li><a href="#f">联系我们</a></li>
+                        <li><a href="#g">合作伙伴</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- banner -->
+    <template id="banner">
+        <div>
+            <div class="banner">
+                <div class="ban_text">
+                    <h2>践行惠普金融助力<span>美好生活</span></h2>
+                    <p>我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</p>
+                    <div class="ban_text_btn">
+                        <span>联系我们 →</span>
+                        <span>点我资寻 →</span>
+                    </div>
+                </div>
+                <div class="ban_img">
+                    <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvM2Q1MjJlZDZlYTZiM2I2YWEwYmVjNGM3YTBkMjcxNzIucG5n.png" alt="">
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 使用流程 -->
+    <template id="pass">
+        <div>
+            <div class="pass" id="b">
+                <h3>{{title}}</h3>
+                <p>{{cont}}</p>
+                <ul class="clearfix">
+                    <li>
+                        <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvOWNlZjc3MThhM2UzYjUwZWMwNmFlMzY2MTM2YzI2MTYucG5n.png" alt="">
+                        <p>创建账户</p>
+                    </li>
+                    <li>
+                        <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjRkOWZhNDMyOGRiNTYxMGU0MDg5MmZiYWY0MWEzZTUucG5n.png" alt="">
+                        <p>安全保障</p>
+                    </li>
+                    <li>
+                        <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvNDg1Zjk2YWE4MmFhMzdhODgzYWM3MWVjMDgxMDA5YWQucG5n.png" alt="">
+                        <p>绑定付款</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </template>
+    <!-- 近期货币 -->
+    <template id="money">
+        <div>
+            <div class="money clearfix">
+                <div class="money_lf">
+                    <p class="money_lf_text">近期货币</p>
+                    <p class="money_lf_text"><span>购买进度</span></p>
+                    <div class="money_time">
+                        <p>
+                            <span>00</span>天<span>00</span>时<span>00</span>分钟<span>00</span>秒
+                        </p>
+                    </div>
+                    <div class="money_bar">
+                        <div>
+                            <p>购买进度</p>
+                        </div>
+                    </div>
+                    <div class="money_link">
+                        <p>联系我们 →</p>
+                    </div>
+                </div>
+                <div class="money_rt">
+                    <h5>最值得信赖的平台</h5>
+                    <p class="money_rt_text">移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？</p>
+                    <div class="money_list">
+                        <p><span>√</span>享受专属优惠券</p>
+                        <p><span>√</span>用于商城消费 先用后付</p>
+                        <p><span>√</span>随心付，3/6/9/12期随心付</p>
+                    </div>
+                    <div class="money_rt_img">
+                        <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvM2UwNjU1NTQ1Y2Q2OGJiMjRmZTllYzNhNmIzMzc4ZTEucG5n.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- 全球服务 -->
+    <template id="ball">
+        <div>
+            <div class="ball" id="c">
+                <h3>{{title}}</h3>
+                <p>{{cont}}</p>
+                <img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cHM6Ly81ZDM5NjllNDU0MTBjLnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDcvMjE4N2VmMjZiNjA3YmZmZTA0NTM4MjEzYjQ2MTJkYmMuanBn.jpg" alt="">
+            </div>
+        </div>
+    </template>
+    <template id="til">
+    	<div>
+    		<div class="til">
+    			<h3>你好</h3>
+    		<p>12312312312312312312312313123123</p>
+    		</div>
+    	</div>
+    </template>
+</body>
+<script src="../../vue.js"></script>
+<script>
+//标题
+Vue.component('til', {
+    template: '#til',
+});
+//导航
+Vue.component('dh', {
+    template: '#nav',
+});
+// banner
+Vue.component('ban', {
+    template: '#banner',
+});
+// 使用流程
+Vue.component('pass', {
+    template: '#pass',
+    props: ['title', 'cont'],
+    data() {
+        return {
+            title: this.title,
+            cont: this.cont
+        }
+    }
+});
+// 近期货币
+Vue.component('money', {
+    template: '#money',
+});
+// 全球服务
+Vue.component('ball', {
+    template: '#ball',
+    props: ['title', 'cont'],
+    data() {
+        return {
+            title: this.title,
+            cont: this.cont
+        }
+    }
+});
+new Vue({
+    el: '.warp',
+})
+</script>
+
+</html>
