@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/travel.css">
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script src="js/travel.js"></script>
+</head>
+
+<body>
+    <div id="warp">
+        <div class="hd" id="box1">
+            <div class="logo">
+                <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzM0MDdjY2U4MDk5MTljNjZhZmNjZDYxMWJkNTIxZDkucG5n.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#/">首页</a></li>
+                    <li><a href="#/gy">关于</a></li>
+                    <li><a href="#/lx">路线</a></li>
+                    <li><a href="#/gl">攻略</a></li>
+                    <li><a href="#/eml">联系</a></li>
+                </ul>
+            </div>
+            <div class="nav_us">
+                <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZGE4MWFlMzI1NjNiMWNhM2M1NjJlNGYyYjBmYjU5ZDEtMjN4MTUucG5n.png" alt="">
+            </div>
+        </div>
+        <div class="hd hd_top" id="box2">
+            <div class="logo">
+                <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZmM0NTQ5ZDRmODRiZGM3Yjc3YmRhZTBiOTU2MGE2MDkucG5n.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#/">首页</a></li>
+                    <li><a href="#/gy">关于</a></li>
+                    <li><a href="#/lx">路线</a></li>
+                    <li><a href="#/gl">攻略</a></li>
+                    <li><a href="#/eml">联系</a></li>
+                </ul>
+            </div>
+            <div class="nav_us">
+                <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvZGE4MWFlMzI1NjNiMWNhM2M1NjJlNGYyYjBmYjU5ZDEtMjN4MTUucG5n.png" alt="">
+            </div>
+        </div>
+        <router-view />
+        <div slot='ban'>
+            <div class="banner ban_two">
+                <div class="ban_lf"></div>
+                <div class="ban_til">
+                    <h3>CONTACT</h3>
+                    <p><i></i><span>背上行囊去远方，那个梦寐以求的目的地。</span><i></i></p>
+                </div>
+            </div>
+        </div>
+        <div slot="fot">
+            <div class="foot">
+                <div class="fot_top clearfix">
+                    <div class="fot_text">
+                        <h4>TRAVEL</h4>
+                        <p>我公司会以安全、快乐、环保为理念，以敬业、诚信、善良为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</p>
+                    </div>
+                    <div class="fot_text">
+                        <h4>CONTACT</h4>
+                        <p>
+                            <span><i></i>深圳市南京路双港码头6楼</span>
+                            <span><i></i>123@admin.com</span>
+                            <span><i></i>011-555-12345</span>
+                        </p>
+                    </div>
+                    <div class="fot_text">
+                        <div class="fot_img">
+                            <!-- <img src="http://fast.qifeiye.com/FeiEditor/images/icon/social_icon_64x64.png" alt=""> -->
+                        </div>
+                        <p>我公司会以安全、快乐、环保为理念，以敬业、诚信、善良为本，期待与全国各地的户外公司、户外俱乐部、旅行社进行合作。</p>
+                    </div>
+                </div>
+                <div class="fot_btm">
+                    <p>Copyright © 2019 户外探险模板 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <div slot='lunbo'>
+            <div class="ban_lunbo swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvNTc5MTNjNzVjMWU3OGRjOGVhNWI0MTRmMDg0MWFmNDUtNDAweDI5MC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctNDAweDI5MC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNDAweDI5MC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 首页 -->
+    <template id="index">
+        <div>
+            <div class="banner clearfix">
+                <div class="ban_lf">
+                    <h3>探索<br>山野秘境<br>发现纯粹自我|</h3>
+                    <div class="ban_lf_btm">
+                        <span>背着背包的路上，听过许多故事，见过旅行风景。</span>
+                        <span>流转的时光，都成为命途中的点缀，</span>
+                        <span>不言不语都是好风景。</span>
+                    </div>
+                    <div class="ban_btn">
+                        <p>CUSTOM<span></span></p>
+                    </div>
+                </div>
+                <div class="ban_rt">
+                    <div class="ban_rt_top">
+                        <div class="ban_data">
+                            <h5>海拔</h5>
+                            <p><span>1650</span>m</p>
+                        </div>
+                        <div class="ban_data">
+                            <h5>路线</h5>
+                            <p><span>7</span></p>
+                        </div>
+                        <div class="ban_data">
+                            <h5>游客 / </h5>
+                            <p><span>3000</span>+</p>
+                        </div>
+                    </div>
+                    <slot name='lunbo'></slot>
+                </div>
+            </div>
+            <div class="content">
+                <div class="cont swiper-container">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide" v-for="i in 6">
+                            <div class="cont_img">
+                                <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvOTgwYzcyMWVkNzI1NzRiMzNkMjUzZTU5Yjg2ZDJmNjctODAweDUwMC5qcGc_p_p100_p_3D.jpg" alt="">
+                            </div>
+                            <div class="cont_sw_text">
+                                <div class="go_text">
+                                    <h5>织金大峡谷</h5>
+                                    <p>
+                                        <span>Distance:8.5km</span>
+                                        <span>Days:7</span>
+                                    </p>
+                                    <p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_text">
+                    <h5>RECOMM</h5>
+                    <p>精选当季热门目的地<i></i></p>
+                    <p><span>偶尔为街头独特的风景驻足，偶尔因高山流水的美丽停留，偶尔被惊鸿一瞥的美丽吸引；或者在春暖花开时，或者在河边放下一盏写着心愿的河灯，祝愿一切安好。</span></p>
+                </div>
+                <div class="cont_type">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <slot name='fot'></slot>
+        </div>
+    </template>
+    <!-- 关于 -->
+    <template id="and">
+        <div>
+            <slot name='ban'></slot>
+            <div class="and">
+                <div class="and_cont">
+                    <div class="and_text">
+                        <p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
+                    </div>
+                    <div class="and_text">
+                        <p>起飞页提供了海量精美网站模板和成品网站，几乎覆盖了当今各个行业，您只需在模板上进行少量修改，即可完成自己的网站，起飞页用户的最短建站时间纪录为30分钟。起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…</p>
+                    </div>
+                    <div class="and_rt swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" v-for="i in 5"><img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvYWMwNjRjY2Y5NDJmNDNiNTY1YzZhODY5MzMxMjM1ZWItNjAweDMwMC5qcGc_p_p100_p_3D.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <slot name='fot'></slot>
+        </div>
+    </template>
+    <!-- 路线 -->
+    <template id="go">
+        <div>
+            <slot name='ban'></slot>
+            <div class="go">
+                <ul class="clearfix">
+                    <li v-for="i in 6">
+                        <div class="go_img">
+                            <img src="https://ccdn.goodq.top/caches/b18d463ab761d9369e21aaf6ec1c2764/aHR0cHM6Ly81ZDBjNzNmODdkMzc4LnQ3My5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDYvMzE0Mzg3ZGQ4MmQxNTJjMmQ5ZmZhZTNjMWUyOTM4MjYtODAweDUwMC5qcGc_p_p100_p_3D.jpg" alt="">
+                        </div>
+                        <div class="go_text">
+                            <h5>织金大峡谷</h5>
+                            <p>
+                                <span>Distance:8.5km</span>
+                                <span>Days:7</span>
+                            </p>
+                            <p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <slot name='fot'></slot>
+        </div>
+    </template>
+    <!-- 攻略 -->
+    <template id="fa">
+        <div>
+            <slot name='ban'></slot>
+            <slot name='fot'></slot>
+        </div>
+    </template>
+    <!-- 联系 -->
+    <template id="eml">
+        <div>
+            <slot name='ban'></slot>
+            <div id="dituContent"></div>
+            <slot name='fot'></slot>
+        </div>
+    </template>
+    <template id="ban">
+    </template>
+</body>
+<script>
+//吸顶、
+var headheight = box1.offsetHeight;
+document.addEventListener("scroll", onScroll);
+
+function onScroll(e) {
+    if (window.scrollY > headheight) {
+        box2.style.top = "0";
+    } else {
+        box2.style.top = "-77px";
+    }
+}
+new Vue({
+    el: '#warp',
+    router,
+});
+var mySwiper = new Swiper('.cont', {
+    loop: true, // 循环模式选项
+    // 如果需要前进后退按钮
+    slidesPerView: 2,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+var mySwiper = new Swiper('.and_rt', {
+    loop: true, // 循环模式选项
+})
+
+var mySwiper = new Swiper('.ban_lunbo', {
+    loop: true, // 循环模式选项
+    slidesPerView: 2,
+    // 如果需要前进后退按钮
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+
+//******************地图***************//
+//创建和初始化地图函数：
+function initMap() {
+    createMap(); //创建地图
+    setMapEvent(); //设置地图事件
+    addMapControl(); //向地图添加控件
+}
+
+//创建地图函数：
+function createMap() {
+    var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+    var point = new BMap.Point(116.149447, 39.754327); //定义一个中心点坐标
+    map.centerAndZoom(point, 12); //设定地图的中心点和坐标并将地图显示在地图容器中
+    window.map = map; //将map变量存储在全局
+}
+
+//地图事件设置函数：
+function setMapEvent() {
+    map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+    map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+    map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+    map.enableKeyboard(); //启用键盘上下左右键移动地图
+}
+
+//地图控件添加函数：
+function addMapControl() {
+    //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+    map.addControl(ctrl_nav);
+    //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+    map.addControl(ctrl_ove);
+    //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+    map.addControl(ctrl_sca);
+}
+
+
+initMap(); //创建和初始化地图
+</script>
+
+</html>
